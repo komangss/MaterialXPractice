@@ -3,14 +3,18 @@ package com.example.materialxpractice;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
+import com.example.materialxpractice.BottomNavigation.BottomNavigationListActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BottomNavigationView navigation;
+    private Button btnToBottomNavigationLoListActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,22 +25,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponent() {
-        navigation = findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        btnToBottomNavigationLoListActivity = findViewById(R.id.btn_to_bottom_navigation_list);
+
+        btnToBottomNavigationLoListActivity.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.navigation_movie:
-                        navigation.setBackgroundColor(getResources().getColor(R.color.blue_grey_700));
-                        return true;
-                    case R.id.navigation_music:
-                        navigation.setBackgroundColor(getResources().getColor(R.color.pink_800));
-                        return true;
-                    case R.id.navigation_books:
-                        navigation.setBackgroundColor(getResources().getColor(R.color.grey_700));
-                        return true;
-                }
-                return false;
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BottomNavigationListActivity.class);
+                startActivity(intent);
             }
         });
     }
