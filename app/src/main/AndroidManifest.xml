@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BottomNavigation.Shifting.BottomNavigationShiftingActivity"></activity>
+        <activity android:name=".BottomNavigation.Primary.BottomNavigationPrimaryActivity"></activity>
+        <activity android:name=".BottomNavigation.Shifting.BottomNavigationShiftingActivity" />
         <activity android:name=".BottomNavigation.BottomNavigationListActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

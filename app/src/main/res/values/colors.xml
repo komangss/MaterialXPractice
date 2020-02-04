@@ -7,4 +7,9 @@
     <color name="grey_700">#616161</color>
     <color name="pink_800">#AD1457</color>
     <color name="blue_grey_700">#455A64</color>
+    <color name="teal_500">#009688</color>
+    <color name="deep_orange_400">#FF7043</color>
+    <color name="teal_600">#00897B</color>
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
 </resources>

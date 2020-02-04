@@ -7,13 +7,25 @@
     tools:context=".BottomNavigation.BottomNavigationListActivity">
 
     <Button
-        android:padding="16dp"
         android:id="@+id/btn_to_bottom_navigation_shifting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
         android:text="bottom navigation shifting"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_to_bottom_navigation_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bottom navigation primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_to_bottom_navigation_shifting"
+        app:layout_constraintVertical_bias="0.119" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
