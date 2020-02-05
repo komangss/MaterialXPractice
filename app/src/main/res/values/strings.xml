@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MaterialXPractice</string>
-    <string name="to_bottom_navigation">bottom navigation</string>
+    <string name="to_bottom_navigation">Bottom Navigation</string>
+    <string name="to_bottom_sheet">Bottom Sheet</string>
 </resources>

@@ -4,26 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".BottomSheet.ListBottomSheetActivity">
 
     <Button
-        android:layout_marginTop="16dp"
-        android:padding="16dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/btn_to_bottom_navigation_list"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_to_sheet_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/to_bottom_navigation" />
+        android:text="to bottom sheet list" />
 
     <Button
+        android:id="@+id/btn_to_sheet_float"
         android:layout_marginTop="16dp"
+        android:layout_below="@+id/btn_to_sheet_list"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btn_to_bottom_navigation_list"
-        android:padding="16dp"
-        android:id="@+id/btn_to_bottom_sheet_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/to_bottom_sheet" />
-
-
+        android:text="to bottom sheet floating" />
 </RelativeLayout>
