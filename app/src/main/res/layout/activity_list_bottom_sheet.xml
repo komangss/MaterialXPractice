@@ -21,4 +21,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="to bottom sheet floating" />
+
+    <Button
+        android:id="@+id/btn_to_sheet_full"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/btn_to_sheet_float"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to bottom sheet full" />
 </RelativeLayout>
