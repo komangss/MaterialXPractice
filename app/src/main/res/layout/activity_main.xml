@@ -25,5 +25,15 @@
         android:layout_height="wrap_content"
         android:text="@string/to_bottom_sheet" />
 
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_to_bottom_sheet_list"
+        android:padding="16dp"
+        android:id="@+id/btn_to_button_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_button_list" />
+
 
 </RelativeLayout>

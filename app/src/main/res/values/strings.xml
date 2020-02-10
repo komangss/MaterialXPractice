@@ -2,4 +2,6 @@
     <string name="app_name">MaterialXPractice</string>
     <string name="to_bottom_navigation">Bottom Navigation</string>
     <string name="to_bottom_sheet">Bottom Sheet</string>
+    <string name="to_button_list">to button list</string>
+    <string name="basic_button">Basic Button</string>
 </resources>

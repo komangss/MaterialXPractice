@@ -9,10 +9,9 @@ import android.widget.Button;
 
 import com.example.materialxpractice.BottomNavigation.BottomNavigationListActivity;
 import com.example.materialxpractice.BottomSheet.ListBottomSheetActivity;
+import com.example.materialxpractice.Button.ListButtonActivity;
 
 public class MainActivity extends AppCompatActivity {
-
-    private Button btnToBottomNavigationLoListActivity, btnToBottomSheetActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponent() {
-        btnToBottomNavigationLoListActivity = findViewById(R.id.btn_to_bottom_navigation_list);
+        Button btnToBottomNavigationLoListActivity = findViewById(R.id.btn_to_bottom_navigation_list);
 
         btnToBottomNavigationLoListActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,12 +31,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnToBottomSheetActivity = findViewById(R.id.btn_to_bottom_sheet_list);
+        Button btnToBottomSheetActivity = findViewById(R.id.btn_to_bottom_sheet_list);
 
         btnToBottomSheetActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListBottomSheetActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnToButtonList = findViewById(R.id.btn_to_button_list);
+
+        btnToButtonList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListButtonActivity.class);
                 startActivity(intent);
             }
         });
