@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.example.materialxpractice.BottomNavigation.BottomNavigationListActivity;
 import com.example.materialxpractice.BottomSheet.ListBottomSheetActivity;
 import com.example.materialxpractice.Button.ListButtonActivity;
+import com.example.materialxpractice.Card.ListCardActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,6 +48,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListButtonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnToCardList = findViewById(R.id.btn_to_card_list);
+
+        btnToCardList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListCardActivity.class);
                 startActivity(intent);
             }
         });
