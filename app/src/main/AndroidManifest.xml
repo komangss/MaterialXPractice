@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Card.Basic.CardBasicActivity"></activity>
-        <activity android:name=".Button.FabMore.ButtonFabMoreActivity" />
+        <activity android:name=".Card.Timeline.CardTimelineActivity"></activity>
+        <activity android:name=".Card.Basic.CardBasicActivity" />
         <activity android:name=".Button.Basic.ButtonBasicActivity" />
         <activity android:name=".Button.ListButtonActivity" />
         <activity android:name=".BottomSheet.Full.BottomSheetFullActivity" />

@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.materialxpractice.Card.Basic.CardBasicActivity;
+import com.example.materialxpractice.Card.Timeline.CardTimelineActivity;
 import com.example.materialxpractice.R;
 
 public class ListCardActivity extends AppCompatActivity {
@@ -17,8 +18,8 @@ public class ListCardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_card);
 
-        Button btnToButtonBasic = findViewById(R.id.btn_to_card_basic);
-        btnToButtonBasic.setOnClickListener(new View.OnClickListener() {
+        Button btnToCardBasic = findViewById(R.id.btn_to_card_basic);
+        btnToCardBasic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ListCardActivity.this, CardBasicActivity.class);
@@ -26,13 +27,13 @@ public class ListCardActivity extends AppCompatActivity {
             }
         });
 
-//        Button btnToButtonFabMore = findViewById(R.id.btn_to_btn_fab_more);
-//        btnToButtonFabMore.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(ListCardActivity.this, ButtonFabMoreActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button btnToCardTimeline = findViewById(R.id.btn_to_card_timeline);
+        btnToCardTimeline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListCardActivity.this, CardTimelineActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
