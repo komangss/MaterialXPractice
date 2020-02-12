@@ -1,8 +1,13 @@
 package com.example.materialxpractice.Chips;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.materialxpractice.Chips.Basic.ChipBasicActivity;
 import com.example.materialxpractice.R;
 
 public class ListChipsActivity extends AppCompatActivity {
@@ -12,22 +17,13 @@ public class ListChipsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_chips);
 
-//        Button btnToCardBasic = findViewById(R.id.btn_to_card_basic);
-//        btnToCardBasic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(ListChipsActivity.this, CardBasicActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        Button btnToCardTimeline = findViewById(R.id.btn_to_card_timeline);
-//        btnToCardTimeline.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(ListChipsActivity.this, CardTimelineActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button btnToChipsBasic = findViewById(R.id.btn_to_chips_basic);
+        btnToChipsBasic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListChipsActivity.this, ChipBasicActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

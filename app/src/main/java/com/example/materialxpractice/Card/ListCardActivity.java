@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.materialxpractice.Card.Basic.CardBasicActivity;
 import com.example.materialxpractice.Card.Timeline.CardTimelineActivity;
+import com.example.materialxpractice.Card.Wizard.CardWizardActivity;
+import com.example.materialxpractice.Card.WizardOverleap.CardWizardOverlapActivity;
 import com.example.materialxpractice.R;
 
 public class ListCardActivity extends AppCompatActivity {
@@ -32,6 +34,24 @@ public class ListCardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ListCardActivity.this, CardTimelineActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnToCardWizard = findViewById(R.id.btn_to_card_wizard);
+        btnToCardWizard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListCardActivity.this, CardWizardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnToCardWizardOverleap = findViewById(R.id.btn_to_card_wizard_overleap);
+        btnToCardWizardOverleap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListCardActivity.this, CardWizardOverlapActivity.class);
                 startActivity(intent);
             }
         });

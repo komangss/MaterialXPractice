@@ -11,6 +11,7 @@ import com.example.materialxpractice.BottomNavigation.BottomNavigationListActivi
 import com.example.materialxpractice.BottomSheet.ListBottomSheetActivity;
 import com.example.materialxpractice.Button.ListButtonActivity;
 import com.example.materialxpractice.Card.ListCardActivity;
+import com.example.materialxpractice.Chips.ListChipsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponent() {
-        Button btnToBottomNavigationLoListActivity = findViewById(R.id.btn_to_bottom_navigation_list);
 
+        Button btnToBottomNavigationLoListActivity = findViewById(R.id.btn_to_bottom_navigation_list);
         btnToBottomNavigationLoListActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button btnToBottomSheetActivity = findViewById(R.id.btn_to_bottom_sheet_list);
 
+        Button btnToBottomSheetActivity = findViewById(R.id.btn_to_bottom_sheet_list);
         btnToBottomSheetActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button btnToButtonList = findViewById(R.id.btn_to_button_list);
-
         btnToButtonList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,11 +53,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button btnToCardList = findViewById(R.id.btn_to_card_list);
-
         btnToCardList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListCardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnToChipsList = findViewById(R.id.btn_to_chips_list);
+        btnToChipsList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListChipsActivity.class);
                 startActivity(intent);
             }
         });

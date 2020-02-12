@@ -45,4 +45,14 @@
         android:layout_height="wrap_content"
         android:text="@string/card_list" />
 
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_to_card_list"
+        android:padding="16dp"
+        android:id="@+id/btn_to_chips_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_chips_list" />
+
 </RelativeLayout>

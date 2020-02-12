@@ -1,45 +1,21 @@
 package com.example.materialxpractice.Model;
 
+import android.graphics.drawable.Drawable;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class People implements Parcelable {
+public class People{
+    public int image;
+    public Drawable imageDrw;
     public String name;
+    public String email;
+    public boolean section = false;
 
-    public String getName() {
-        return name;
+    public People() {
     }
 
-    public void setName(String name) {
+    public People(String name, boolean section) {
         this.name = name;
+        this.section = section;
     }
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.name);
-    }
-
-    People() {
-    }
-
-    protected People(Parcel in) {
-        name = in.readString();
-    }
-
-    public static final Creator<People> CREATOR = new Creator<People>() {
-        @Override
-        public People createFromParcel(Parcel in) {
-            return new People(in);
-        }
-
-        @Override
-        public People[] newArray(int size) {
-            return new People[size];
-        }
-    };
-
 }

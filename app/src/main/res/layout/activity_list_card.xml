@@ -22,5 +22,24 @@
         android:id="@+id/btn_to_card_timeline"
         android:text="card timeline" />
 
+    <Button
+        android:id="@+id/btn_to_card_wizard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btn_to_card_timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="card wizard" />
+
+
+    <Button
+        android:id="@+id/btn_to_card_wizard_overleap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btn_to_card_wizard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="card wizard overleap" />
+
 
 </RelativeLayout>
