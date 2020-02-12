@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.materialxpractice.Chips.Basic.ChipBasicActivity;
+import com.example.materialxpractice.Chips.Tag.ChipTagActivity;
 import com.example.materialxpractice.R;
 
 public class ListChipsActivity extends AppCompatActivity {
@@ -22,6 +23,15 @@ public class ListChipsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ListChipsActivity.this, ChipBasicActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnToChipsTag = findViewById(R.id.btn_to_chips_tag);
+        btnToChipsTag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListChipsActivity.this, ChipTagActivity.class);
                 startActivity(intent);
             }
         });

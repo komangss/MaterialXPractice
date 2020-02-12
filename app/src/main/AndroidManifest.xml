@@ -32,6 +32,7 @@
         <activity android:name=".Card.Wizard.CardWizardActivity" />
         <activity android:name=".Card.WizardOverleap.CardWizardOverlapActivity" />
         <activity android:name=".Chips.Basic.ChipBasicActivity" />
+        <activity android:name=".Chips.Tag.ChipTagActivity" />
     </application>
 
 </manifest>
